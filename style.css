@@ -1,7 +1,11 @@
 body{
     display:flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
+    gap:16px;
+    background-color: #272932;
+
 }
 
 .container{
@@ -9,20 +13,31 @@ body{
     flex:0 0 auto;
     height:640px;
     width:640px;
+    background-color: white;
 }
 
 .row{
     display:flex;
     flex-direction: column;
     flex:1;
-    border: 1px solid black;
-    background-color: blue;
+    border: 0.01px solid #272932;
     display:flex;
 }
 
 .cell{
     flex:1px;
-    border:1px solid black;
+    border:0.01px solid #272932;
+}
 
+.resetBtn{
+    background-color: #fdf500;
+    color:#35e3ea;
+    border-radius: 20px;
+    border: 2px solid #35e3ea;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 25px;
+    font-weight: 700;
+    height:40px;
+    width:100px;
 }
 
